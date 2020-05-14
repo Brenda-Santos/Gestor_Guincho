@@ -12,10 +12,11 @@
 
     <img src="" alt="">
         <h1>LOGIN</h1>
-        <form method='POST' action='process_login.php'>
-            <input type="login" placeholder='Usuário'>    
-            <input type="password" placeholder='Senha'>
+        <form method='POST' action=<?= base_url('home/login') ?>>
+            <input type="login" placeholder='Usuário' name='user'>    
+            <input type="password" placeholder='Senha' name='password'>
             <input id="button_login" type="submit" value='Entrar'>
+            
         </form>
 
     </div>
